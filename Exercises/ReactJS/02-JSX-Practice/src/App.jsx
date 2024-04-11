@@ -12,11 +12,29 @@ const message = {
 };
 
 function App() {
-  const profileUrl = // PUT YOUR ANSWER HERE
-
+  const profileUrl = `/users/${message.author.handle}`;
+  // Added console to check profileUrl;
+  //console.log(profileUrl);
   return (
-    // PUT YOUR JSX CODE HERE
+    // PUT YOUR CODE SOLUTION HERE
+    <article>
+      <header>
+        <img
+          src={message.author.avatarSrc}
+          alt={message.author.avatarDescription}
+        />
+        <a href="">{message.author.name}</a>
+      </header>
+      <p>{message.content}</p>
+      <footer>
+        Posted{" "}
+        <time dateTime={message.published}>
+          {formatDate(message.published)}
+        </time>
+      </footer>
+    </article>
   );
+
   /*
 Here's the raw HTML:
 
