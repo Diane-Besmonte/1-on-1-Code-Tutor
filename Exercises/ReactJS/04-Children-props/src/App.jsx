@@ -1,5 +1,11 @@
 // PUT YOUR COMPONENT HERE OR MAKE A NEW COMPONENT FILE AND IMPORT HERE
-const NewButton = ({ bordercolor, textcolor, backgroundcolor, content }) => {
+const NewButton = ({
+  bordercolor,
+  textcolor,
+  backgroundcolor,
+  content,
+  style,
+}) => {
   return (
     <>
       <button
@@ -11,6 +17,7 @@ const NewButton = ({ bordercolor, textcolor, backgroundcolor, content }) => {
           borderRadius: 4,
           padding: 16,
           margin: 8,
+          ...style,
         }}
       >
         {content}
@@ -56,6 +63,7 @@ function App() {
         textcolor="white"
         backgroundcolor="red"
         content="Cancel"
+        style={{ color: "green", backgroundColor: "yellow" }}
       />
       <NewButton
         bordercolor="skyblue"
