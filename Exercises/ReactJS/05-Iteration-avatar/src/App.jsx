@@ -39,8 +39,8 @@ function App() {
         src="https://sandpack-bundler.vercel.app/img/avatars/004.png"
         alt="person with a pink mohawk and a raised eyebrow"
       /> */}
-      {avatars.map((avatar) => (
-        <Avatar src={avatar.src} alt={avatar.alt} />
+      {avatars.map((avatar, index) => (
+        <Avatar key={index} src={avatar.src} alt={avatar.alt} />
       ))}
     </div>
   );
