@@ -6,6 +6,7 @@ import LogoutBtn from "./LogoutBtn";
 
 function App() {
   const [count, setCount] = useState(0);
+  console.log("🚀 ~ App ~ count:", count);
 
   return (
     <>
