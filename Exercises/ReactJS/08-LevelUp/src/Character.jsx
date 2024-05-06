@@ -11,12 +11,15 @@ function Character() {
     setIntelligence(intelligence + 3);
 
     // FIX THE BUG HERE
+    const nextStrength = strength + 1;
+    const nextDexterity = dexterity + 2;
+    const nextIntelligence = intelligence + 3;
 
     window.alert(`
       Congratulations! Your hero now has the following stats:
-      Str: ${strength}
-      Dex: ${dexterity}
-      Int: ${intelligence}
+      Str: ${nextStrength}
+      Dex: ${nextDexterity}
+      Int: ${nextIntelligence}
     `);
   }
 
